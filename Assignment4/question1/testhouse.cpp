@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  Assignment 4
-//
-//  Created by Timothy Morvan on 13/03/2020.
-//  Copyright © 2020 Timothy Morvan. All rights reserved.
-//
-
 #include <iostream>
 #include "house.h"
 

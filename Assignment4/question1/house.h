@@ -1,11 +1,3 @@
-//
-//  house.hpp
-//  Assignment 4
-//
-//  Created by Timothy Morvan on 13/03/2020.
-//  Copyright © 2020 Timothy Morvan. All rights reserved.
-//
-
 #ifndef house_hpp
 #define house_hpp
 

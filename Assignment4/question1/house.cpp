@@ -1,11 +1,3 @@
-//
-//  house.cpp
-//  Assignment 4
-//
-//  Created by Timothy Morvan on 13/03/2020.
-//  Copyright © 2020 Timothy Morvan. All rights reserved.
-//
-
 #include "house.h"
 
 // Constructor initialize all the private data members of the class to 0
