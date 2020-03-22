@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "house.hpp"
+#include "house.h"
 
 int main() {
     

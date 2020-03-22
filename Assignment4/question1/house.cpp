@@ -6,7 +6,7 @@
 //  Copyright © 2020 Timothy Morvan. All rights reserved.
 //
 
-#include "house.hpp"
+#include "house.h"
 
 using namespace std;
 
