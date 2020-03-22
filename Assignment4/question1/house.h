@@ -9,7 +9,6 @@
 #ifndef house_hpp
 #define house_hpp
 
-#include <stdio.h>
 #include <string>
 
 class House {

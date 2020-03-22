@@ -8,8 +8,6 @@
 
 #include "house.h"
 
-using namespace std;
-
 // Constructor initialize all the private data members of the class to 0
 House::House() {
     
