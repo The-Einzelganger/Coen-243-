@@ -7,15 +7,11 @@
 //
 //  Environment: Xcode, Version 2019
 
-#ifndef Houselist_hpp
-#define Houselist_hpp
+#ifndef Houselist_h
+#define Houselist_h
 
-#include <stdio.h>
 #include <iostream>
 #include <string>
-
-using namespace std;
-
 
 // Using the same House class as in question 1
 class House {
@@ -60,20 +56,21 @@ class HouseList{
     
     // Data Members:
     
-    static const size_t LIST_SIZE = 150; // the maximum items in the list
-    House *items; // items will point to the dynamically allocated array
-    size_t numItems; // the number of items currently in the list
+            static const size_t LIST_SIZE = 150; // the maximum items in the list
+            House *items; // items will point to the dynamically allocated array
+            size_t numItems; // the number of items currently in the list
     
     public:
     
     // Constructor:
-    HouseList();
+                HouseList();
     
     // Member Functions:
-    void printHousePrice();
-    void addHouse(const House &h);
-    void HouseinRange(const HouseList &hsl);
-    void HouseInformation();
+                void printHousePrice();
+                void addHouse(const House &h);
+                void HouseinRange(const HouseList &hsl);
+                void HouseInformation();
+                ~HouseList();
 };
 
 #endif /* Houselist_hpp */
