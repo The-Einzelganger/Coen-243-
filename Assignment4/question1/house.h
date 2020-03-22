@@ -1,6 +1,3 @@
-#ifndef house_hpp
-#define house_hpp
-
 #include <string>
 
 class House {
@@ -35,6 +32,3 @@ class House {
 
     double EstimatePrice();
 };
-
-
-#endif /* house_hpp */
