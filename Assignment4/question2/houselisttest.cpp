@@ -12,10 +12,11 @@
 
 int main (){
 
-    int age = 0, unit = 0;
+    int count = 1, age = 0, unit = 0;
     std::string type, answer;
     double price = 0;
     bool flag = true;
+    int LIST_SIZE = 150;
     
     HouseList hsl;
     House hs;
@@ -43,11 +44,18 @@ int main (){
         
         // Adding house in the list
         hsl.addHouse(hs);
+        count++;
         
-        std::cout << "Do you want to add another house to the list? (yes/no) \n";
-        std::cin >> answer;
-        if (answer == "no"){
+       if (count == LIST_SIZE){
+            std::cout << "You have reached the limit size of this list, the program will resume";
             flag = false;
+        }
+        else {
+            std::cout << "Do you want to add another house to the list? (yes/no) \n";
+            std::cin >> answer;
+            if (answer == "no"){
+            flag = false;
+            }
         }
     }
     
