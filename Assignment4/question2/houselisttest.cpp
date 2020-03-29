@@ -12,19 +12,19 @@
 
 int main (){
 
-    int count = 1, age = 0, unit = 0;
+    int age = 0, unit = 0;
     std::string type, answer;
     double price = 0;
     bool flag = true;
-    int LIST_SIZE = 150;
-    
-    HouseList hsl;
-    House hs;
     
     std::cout << "Hello,\nFrom this program you will be able to set a list of houses and look at their attributes.\nYou will first need to create a list of houses.\n\n";
     
+    // Calling the constructor for Houselist and House
+    HouseList hsl;
+    House hs;
+    
     // Implementing houses in a list
-    while(flag == true) {
+    while (flag == true) {
         
         std::cout << "Creating a new house: \nEnter the age: ";
         std::cin >> age;
@@ -42,19 +42,18 @@ int main (){
         std::cin >> price;
         hs.setCost(price);
         
-        // Adding house in the list
-        hsl.addHouse(hs);
-        count++;
         
-       if (count == LIST_SIZE){
-            std::cout << "You have reached the limit size of this list, the program will resume";
+        // Adding house in the list
+        
+       if (hsl.addHouse(hs) == false){
+            std::cout << "\nYou have reached the limit size of this list, the program will resume.\n";
             flag = false;
         }
         else {
             std::cout << "Do you want to add another house to the list? (yes/no) \n";
             std::cin >> answer;
             if (answer == "no"){
-            flag = false;
+                flag = false;
             }
         }
     }

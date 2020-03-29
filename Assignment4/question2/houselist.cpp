@@ -20,7 +20,7 @@ House::House() {
     // end of constructor
 }
 
-// Define member function
+// Define member function for House:
 
 House::House (int age, std::string type, int unit, double cost) {
     
@@ -28,7 +28,6 @@ House::House (int age, std::string type, int unit, double cost) {
     this -> type = type;
     this -> unit = unit;
     this -> cost = cost;
-    
 }
 
     // Define the funtions as part of the class
@@ -70,26 +69,41 @@ House::House (int age, std::string type, int unit, double cost) {
     std::cout << "\nHouse Attributes: \nAge: " << age << "\nType: " << type << "\nNumber of units: " << unit << "\nCost: $ " << cost << std::endl;
 
     }
+    // End of member function for the house.
+
+
+    // Defining member functions for the HouseList:
 
     // Constructor function
     HouseList::HouseList() {
-    items = new House[LIST_SIZE];
-    numItems = 0;
+        items = new House[LIST_SIZE];
+        numItems = 0;
+        std::cout << "Houselist constructor is called\n";
+    }
+
+    // Destructor function
+    HouseList::~HouseList(){
+        delete [] items;
+        std::cout << "\nHouse list destroyed !" << std::endl;
     }
 
     // Other member functions:
 
     // Add house to the list function
-    void HouseList::addHouse(const House &h){
-    
-    items[numItems] = h;
-    ++ numItems;
-    
+    bool HouseList::addHouse(const House &h){
+        if (numItems < LIST_SIZE){
+            items[numItems] = h;
+            ++ numItems;
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     // Function that prints all the house prices in the list
     void HouseList::printHousePrice (){
-        std::cout << "\n\nHere are all the prices of the houses in the list:\n";
+        std::cout << "\nHere are all the prices of the houses in the list:\n";
         for (int i = 0; i < numItems; i++){
             std::cout << (i+1) << ": $" << items[i].getCost() << "\n";
         }
@@ -122,18 +136,14 @@ House::House (int age, std::string type, int unit, double cost) {
                 std::cout << "Actually there are no houses in that price range, Please try again.\n\n";
             }
         }
-}
+    }
+
 
 // Function that print all the information about a house
-void HouseList::HouseInformation(){
-    std::cout << "\n\nFinally, if interested here is the information gathered on every house in the list:\n";
-    for (int s = 0; s < numItems; s++){
-        items[s].AllHouseAttributes();
+
+    void HouseList::HouseInformation(){
+        std::cout << "\n\nFinally, here is the information gathered on every house in the list:\n";
+        for (int s = 0; s < numItems; s++){
+            items[s].AllHouseAttributes();
+        }
     }
-}
-
-HouseList::~HouseList(){
-    delete [] items;
-    std::cout << "House list destroyed !" << std::endl;
-}
-

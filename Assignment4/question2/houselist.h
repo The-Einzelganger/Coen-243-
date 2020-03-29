@@ -7,8 +7,8 @@
 //
 //  Environment: Xcode, Version 2019
 
-#ifndef Houselist_h
-#define Houselist_h
+#ifndef houselist_h
+#define houselist_h
 
 #include <iostream>
 #include <string>
@@ -67,10 +67,10 @@ class HouseList{
     
     // Member Functions:
                 void printHousePrice();
-                void addHouse(const House &h);
+                bool addHouse(const House &h);
                 void HouseinRange(const HouseList &hsl);
                 void HouseInformation();
                 ~HouseList();
 };
 
-#endif /* Houselist_hpp */
+#endif /* houselist_h */
