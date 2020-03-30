@@ -122,7 +122,7 @@ House::House (int age, std::string type, int unit, double cost) {
             std::cout << "Maximum: $ ";
             std::cin >> max;
         
-            std::cout << "\nHere are the caracteristics of the houses in your price range: \n";
+            std::cout << "\nHere are the characteristics of the houses in your price range: \n";
     
             for (int k=0; k< LIST_SIZE; k++){
                 if (items[k].getCost() >= min && items[k].getCost() <= max){
