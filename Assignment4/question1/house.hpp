@@ -1,10 +1,11 @@
 //
 //  house.hpp
-//  Assignment 4
+//  Assignment 4 Question 1)
 //
-//  Created by Timothy Morvan on 13/03/2020.
-//  Copyright © 2020 Timothy Morvan. All rights reserved.
+//  Timothy Morvan (40126094) and
+//  Trần Nhật Minh (40122374)
 //
+//  Environment: Xcode, Version 2019
 
 #ifndef house_hpp
 #define house_hpp

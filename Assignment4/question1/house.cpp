@@ -1,16 +1,17 @@
 //
 //  house.cpp
-//  Assignment 4
+//  Assignment 4 Question 1)
 //
-//  Created by Timothy Morvan on 13/03/2020.
-//  Copyright © 2020 Timothy Morvan. All rights reserved.
+//  Timothy Morvan (40126094) and
+//  Trần Nhật Minh (40122374)
 //
+//  Environment: Xcode, Version 2019
 
 #include "house.hpp"
 
 using namespace std;
 
-// Constructor initialize all the private data members of the class to 0
+// Constructor initialize all the private data members of the class
 House::House() {
     
     age = 0;
