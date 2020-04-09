@@ -1,10 +1,11 @@
 //
-//  main.cpp
-//  Assign 5
+//  Q1.cpp
+//  Assignment 5 Question 1)
 //
-//  Created by Timothy Morvan on 08/04/2020.
-//  Copyright © 2020 Timothy Morvan. All rights reserved.
+//  Timothy Morvan (40126094) and
+//  Trần Nhật Minh (40122374)
 //
+//  Environment: Xcode, Version 2019
 
 #include <iostream>
 #include <algorithm>
@@ -104,8 +105,8 @@ int main()
     
     std::sort(SortArray, SortArray+(n*n));
     
-    for (int i = 0; i < n*n; i++)
-    std::cout << SortArray[i] << " ";
+//    for (int i = 0; i < n*n; i++)
+//    std::cout << SortArray[i] << " ";
     std::cout << "\n";
     
     if (n % 2 == 0){
